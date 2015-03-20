@@ -1,0 +1,12 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.1",
+  "description": "An off canvas sidebar navigation Bootstrap HTML template",
+  "repository": "https://github.com/angvishvish/sidebar-bootstrap",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1",
+    "bower": "^1.3.1",
+  }
+}
