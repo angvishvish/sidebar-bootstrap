@@ -7,6 +7,6 @@
   "private": true,
   "devDependencies": {
     "bootstrap-less": "~3.2.0",
-    "components-font-awesome": "~4.3.0",
+    "components-font-awesome": "~4.3.0"
   }
 }

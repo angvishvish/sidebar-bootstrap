@@ -8,7 +8,8 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css"/>
+    <link rel="stylesheet/less" type="text/css" href="assets/css/sidebar.less"/>
+    <script type="text/javascript" src="assets/js/less.min.js"></script>
     <title>Sidebar for bootstrap</title>
 </head>
 <body>
@@ -33,13 +34,16 @@
       <div class="jumbotron">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-xs-6">
+            <div class="col-md-4 col-md-offset-4">
               <div class="form-group">
-                <input type="text" class="form-control layout-pos" autofocus value="right">
+                <select class="form-control"
+                  id="selected-dropdown"
+                  onchange="select_layout()">
+                   <option>-- choose an item --</option>
+                  <option value="right">Right aligned</option>
+                  <option value="left">Left aligned</option>
+                </select>
               </div>
-            </div>
-            <div class="col-md-6 col-xs-6">
-              <button class="btn btn default btn-block set-layout">Set layout</button>
             </div>
           </div>
 
