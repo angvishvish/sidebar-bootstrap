@@ -1,22 +1,19 @@
 .main-wrapper,
 .sidebar-toggle,
-.sidebar-wrapper {
+.sidebar-wrapper-left,
+.sidebar-wrapper-right {
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.main-wrapper {
-  padding-left: 275px;
-  height: 100%;
-}
-
+.main-wrapper,
 .page-wrapper {
   height: 100%;
 }
 
-.sidebar-wrapper {
+.sidebar-wrapper-left {
   position: fixed;
   top: 0;
   left: 275px;
@@ -27,6 +24,21 @@
   background-color: black;
   color: white;
   border-right: 1px solid black;
+  z-index: 1000;
+}
+
+.sidebar-wrapper-right {
+  position: fixed;
+  top: 0;
+  right: 275px;
+  margin-right: -275px;
+  width: 275px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: black;
+  color: white;
+  border-left: 1px solid black;
+  z-index: 1000;
 }
 
 .sidebar-brand span {
@@ -57,34 +69,55 @@
   background-color: #ddd;
   border: 1px solid black;
   border-radius: 1px;
-  position: absolute;
-  top: 0;
-  left: 275px;
   cursor: pointer;
 }
 
-.toggled .sidebar-toggle {
+.sidebar-toggle-left {
+  position: absolute;
+  top: 0;
+  left: 275px;
+}
+
+.sidebar-toggle-right {
+  position: absolute;
+  top: 0;
+  right: 275px;
+}
+
+.toggled-left .sidebar-toggle-left {
   left: 0;
 }
 
-.main-wrapper.toggled {
-  padding-left: 0;
+.toggled-right .sidebar-toggle-right {
+  right: 0;
 }
 
-.toggled .sidebar-wrapper {
+.toggled-left .sidebar-wrapper-left {
   margin-left: -275px;
   left: 0;
+}
+
+.toggled-right .sidebar-wrapper-right {
+  margin-right: -275px;
+  right: 0;
 }
 
 .fa-align-justify {
   display: none;
 }
 
-.toggled .fa-align-justify {
+.toggled-left .fa-align-justify {
   display: block;
 }
 
-.toggled .fa-times {
+.toggled-left .fa-times {
   display: none;
 }
 
+.toggled-right .fa-align-justify {
+  display: block;
+}
+
+.toggled-right .fa-times {
+  display: none;
+}
