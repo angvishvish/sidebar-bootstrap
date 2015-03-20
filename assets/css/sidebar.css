@@ -1,6 +1,10 @@
 .main-wrapper {
   padding-left: 275px;
   height: 100%;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .page-wrapper {
@@ -10,13 +14,17 @@
 .sidebar-wrapper {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 275px;
+  margin-left: -275px;
   width: 275px;
   height: 100%;
-  margin-left: -275px;
   overflow-y: auto;
   background-color: black;
   color: white;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 
 }
 
@@ -40,11 +48,11 @@
   cursor: pointer;
 }
 
-// now some animation
+.main-wrapper.toggled {
+  padding-left: 0;
+}
+
 .toggled .sidebar-wrapper {
-  margin-left: 0;
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  margin-left: -275px;
+  left: 0;
 }
