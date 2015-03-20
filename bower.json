@@ -8,9 +8,11 @@
   "devDependencies": {
     "bootstrap-less": "~3.2.0",
     "components-font-awesome": "~4.3.0",
+    "polymer": "Polymer/core-icons#~0.5.5",
     "paper-elements": "Polymer/paper-elements#~0.5.5"
   },
   "dependencies": {
-    "core-icons": "Polymer/core-icons#~0.5.5"
+    "core-icons": "Polymer/core-icons#~0.5.5",
+    "paper-elements": "Polymer/paper-elements#~0.5.5"
   }
 }
