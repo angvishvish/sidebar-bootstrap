@@ -1,3 +1,12 @@
+.main-wrapper,
+.sidebar-toggle,
+.sidebar-wrapper {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .main-wrapper {
   padding-left: 275px;
   height: 100%;
@@ -10,41 +19,72 @@
 .sidebar-wrapper {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 275px;
+  margin-left: -275px;
   width: 275px;
   height: 100%;
-  margin-left: -275px;
   overflow-y: auto;
   background-color: black;
   color: white;
-
+  border-right: 1px solid black;
 }
 
-.sidebar-brand {
-  padding: 20px;
+.sidebar-brand span {
   font-weight: bold;
+  font-size: 21px;
 }
 
 .sidebar-nav {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
   list-style: none;
+}
+
+.sidebar-nav > li > a {
+  padding: 10px 15px;
+  display: block;
+  color: #eee;
+}
+
+.sidebar-nav > li > a:hover,
+.sidebar-nav > li > a:focus {
+  background-color: #999;
+  color: white;
+  text-decoration: none;
 }
 
 .sidebar-toggle {
   padding: 10px 15px;
-  background-color: blue;
+  background-color: #ddd;
+  border: 1px solid black;
+  border-radius: 1px;
   position: absolute;
   top: 0;
   left: 275px;
   cursor: pointer;
 }
 
-// now some animation
-.toggled .sidebar-wrapper {
-  margin-left: 0;
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.toggled .sidebar-toggle {
+  left: 0;
 }
+
+.main-wrapper.toggled {
+  padding-left: 0;
+}
+
+.toggled .sidebar-wrapper {
+  margin-left: -275px;
+  left: 0;
+}
+
+.fa-align-justify {
+  display: none;
+}
+
+.toggled .fa-align-justify {
+  display: block;
+}
+
+.toggled .fa-times {
+  display: none;
+}
+
