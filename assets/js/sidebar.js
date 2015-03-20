@@ -12,14 +12,15 @@
       $('.sidebar-wrapper-right').removeClass('sidebar-wrapper-right').addClass('sidebar-wrapper-' + position);
     }
     
-    $(".sidebar-toggle-left").click(function(e) {
-      e.preventDefault();
-      $(".main-wrapper").toggleClass("toggled-left");
-    });
     $(".sidebar-toggle-right").click(function(e) {
         e.preventDefault();
         $(".main-wrapper").toggleClass("toggled-right");
     });
+  });
+
+  $(".sidebar-toggle-left").click(function(e) {
+    e.preventDefault();
+    $(".main-wrapper").toggleClass("toggled-left");
   });
 
   
