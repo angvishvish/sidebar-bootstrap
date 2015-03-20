@@ -16,9 +16,9 @@
 .sidebar-wrapper-left {
   position: fixed;
   top: 0;
-  left: 275px;
-  margin-left: -275px;
-  width: 275px;
+  left: 250px;
+  margin-left: -250px;
+  width: 250px;
   height: 100%;
   overflow-y: auto;
   background-color: black;
@@ -30,9 +30,9 @@
 .sidebar-wrapper-right {
   position: fixed;
   top: 0;
-  right: 275px;
-  margin-right: -275px;
-  width: 275px;
+  right: 250px;
+  margin-right: -250px;
+  width: 250px;
   height: 100%;
   overflow-y: auto;
   background-color: black;
@@ -75,13 +75,13 @@
 .sidebar-toggle-left {
   position: absolute;
   top: 0;
-  left: 275px;
+  left: 250px;
 }
 
 .sidebar-toggle-right {
   position: absolute;
   top: 0;
-  right: 275px;
+  right: 250px;
 }
 
 .toggled-left .sidebar-toggle-left {
@@ -93,12 +93,12 @@
 }
 
 .toggled-left .sidebar-wrapper-left {
-  margin-left: -275px;
+  margin-left: -250px;
   left: 0;
 }
 
 .toggled-right .sidebar-wrapper-right {
-  margin-right: -275px;
+  margin-right: -250px;
   right: 0;
 }
 
