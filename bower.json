@@ -1,0 +1,15 @@
+{
+  "name": "sidebar-bootstrap",
+  "description": "An off canvas sidebar navigation Bootstrap HTML template",
+  "version": "0.0.1",
+  "homepage": "https://github.com/angvishvish/sidebar-bootstrap",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "bootstrap-less": "~3.2.0",
+    "components-font-awesome": "~4.3.0",
+    "polymer": "Polymer/core-icons#~0.5.5",
+    "core-icons": "Polymer/core-icons#~0.5.5",
+    "paper-elements": "Polymer/paper-elements#~0.5.5"
+  }
+}

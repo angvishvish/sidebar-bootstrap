@@ -26,3 +26,9 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+#ignore bower components
+bower_components
+
+#ignore node modules
+node_modules
